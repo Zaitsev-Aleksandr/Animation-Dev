@@ -1,0 +1,30 @@
+.common-banner-wrapper.next {
+  flex-direction: column;
+
+  .common-slogan {
+    font-size: 180px;
+    transition: 0.8s;
+  }
+  .common-kit-wrapper{
+     display: flex;
+     flex-wrap: nowrap;
+     align-items: center;
+     justify-content: center;
+    height: 500px;
+    transition: 0.8s;
+    .kit-img{
+      position: relative;
+      left: 0;
+      opacity: 1;
+      transition:  0.8s;
+    }
+    .scorer-img{
+      position: relative;
+      right: 0;
+      opacity: 1;
+      transition:0.8s;
+    }
+   }
+
+}
+

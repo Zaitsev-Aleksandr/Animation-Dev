@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+
+    </script>
+</head>
+<body>
+<div class="common-banner-wrapper" id="root">
+    <div class="logo">
+        <img src="img/logo/logo.png">
+    </div>
+    <div class="common-slogan">goal!</div>
+    <div class="common-kit-wrapper">
+        <img class="kit-img" src="img/kit.png">
+        <img class="scorer-img" src="img/scorer.png">
+    </div>
+    <div class="common-total-wrapper">
+        <div class="flex-row">
+            <img class="team_1" src="img/team_1.png">
+            <div class="flex-column">
+                <img class="live" src="img/live.png">
+                <img src="img/3-2.png">
+            </div>
+            <img class="team_2" src="img/team_2.png">
+
+        </div>
+        <img class="scorers" src="img/scorers.png">
+        <div class="hexagon-wrapper">
+            <img src="img/hexagon/1.png">
+            <img src="img/hexagon/2.png">
+            <img src="img/hexagon/3.png">
+        </div>
+    </div>
+
+</div>
+</body>
+
+<script type="module">
+    $(document).ready(function () {
+        const root = $('#root');
+        root.addClass("active");
+        $(".logo").addClass("active");
+        setTimeout(() => {
+            root.addClass("next");
+            root.toggleClass("active");
+        }, 4500);
+        setTimeout(() => {
+            root.addClass("team");
+        }, 7000)
+        setTimeout(() => {
+            $(".common-kit-wrapper, .common-slogan").remove();
+            root.toggleClass("next");
+            root.toggleClass("team");
+            root.addClass("total");
+        }, 7500)
+        setTimeout(() => {
+            root.addClass("hexagon");
+        }, 11000)
+        setTimeout(() => {
+            root.toggleClass("hexagon");
+            root.addClass("last-frame");
+        }, 12500)
+        setTimeout(() => {
+            $(".hexagon-wrapper").remove();
+            $(".common-total-wrapper").remove();
+            $(".logo").remove();
+            root.toggleClass("total");
+            root.toggleClass("last-frame");
+        }, 14000)
+    })
+</script>
+
+</html>

@@ -1,0 +1,13 @@
+.common-banner-wrapper.hexagon {
+  .common-total-wrapper {
+    .scorers {
+      opacity: 0;
+      transition: 0.6s;
+    }
+
+    .hexagon-wrapper {
+      opacity: 0;
+      transition: 0.3s;
+    }
+  }
+}

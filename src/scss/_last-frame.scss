@@ -1,0 +1,18 @@
+.common-banner-wrapper.last-frame{
+  .common-total-wrapper {
+    .scorers{
+      display: none;
+    }
+  }
+  .hexagon-wrapper{
+    display: flex;
+    height: 218px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    opacity: 1;
+    transition: 0.3s;
+    img{
+
+    }
+  }
+}

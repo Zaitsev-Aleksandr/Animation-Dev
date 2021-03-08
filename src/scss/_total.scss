@@ -1,0 +1,40 @@
+.common-banner-wrapper.total{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #C8102E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .common-total-wrapper {
+    display: flex;
+    .team_1 {
+      position: relative;
+      left: 0;
+      margin-right: 20px;
+      opacity: 1;
+      transition: 0.5s;
+    }
+
+    .flex-column {
+      position: relative;
+      top: 0;
+      transition: 0.5s;
+    }
+
+    .team_2 {
+      position: relative;
+      right: 0;
+      opacity: 1;
+      transition: 0.5s;
+    }
+    .scorers{
+      position:relative;
+      bottom:0;
+      opacity: 1;
+      transition: 0.4s;
+
+    }
+  }
+}

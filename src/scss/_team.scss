@@ -1,0 +1,29 @@
+.common-banner-wrapper.team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .common-slogan {
+    transition: 0.4s;
+    top: -400px;
+  }
+
+  .common-kit-wrapper {
+    .kit-img {
+      position: relative;
+      left: -1500px;
+      transition: 0.5s;
+    }
+
+    .scorer-img {
+      position: relative;
+      right: -1500px;
+      transition: 0.5s;
+    }
+  }
+
+  .common-total-wrapper {
+    display: flex;
+  }
+}

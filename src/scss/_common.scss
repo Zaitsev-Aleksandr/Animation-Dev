@@ -1,0 +1,130 @@
+.common-banner-wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #C8102E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .common-slogan {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0;
+    font-family: tipico;
+    transition: 0.8s;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 102px;
+    background: #fff;
+    position: absolute;
+    top: 68px;
+    left: -125px;
+    border-top: 88px solid #fff;
+    border-right: 15px solid #C8102E;
+    transition: 0.5s ease-out;
+
+    img {
+      position: absolute;
+      top: -66px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+
+    &.active {
+      left: 0;
+      transition: 0.8s;
+
+      img {
+        position: absolute;
+        top: -66px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .common-kit-wrapper {
+    height: 0;
+    transition: 1s 0.5s;
+
+    .kit-img {
+      position: absolute;
+      left: -800px;
+      margin-right: 20px;
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    .scorer-img {
+      position: absolute;
+      right: -1200px;
+      opacity: 0;
+      margin-left: 20px;
+      transition: 0.4s;
+    }
+  }
+
+  .common-total-wrapper {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .team_1 {
+      position: absolute;
+      left: -800px;
+      margin-right: 20px;
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    .flex-column {
+      position: absolute;
+      top: -500px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .live {
+        width: 112px;
+        margin-bottom: 65px;
+      }
+    }
+    .flex-row{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .team_2 {
+      position: absolute;
+      right: -1200px;
+      opacity: 0;
+      margin-left: 20px;
+      transition: 0.4s;
+    }
+    .scorers{
+      position: absolute;
+      bottom: -600px;
+      opacity: 0;
+      margin-left: 20px;
+      transition: 0.4s;
+      width: 1117px;
+
+    }
+    .hexagon-wrapper{
+      display: none;
+      flex-wrap: nowrap;
+      opacity: 0;
+      img{
+        margin-left: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@keyframes move_goal {
+  from {
+    font-size: 280px;
+  }
+  to {
+    font-size: 300px;
+  }
+}
+@keyframes rotate-hexagon {
+  0%{
+    transform: scaleX(1);
+  }
+  50% {
+      transform: scaleX(-1);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
+
+.common-banner-wrapper.active {
+  .common-slogan {
+    animation: 0.8s linear 1s 4 alternate move_goal;
+  }
+}
+
+.common-banner-wrapper.last-frame{
+  .hexagon-wrapper{
+    img{
+      animation: linear 0.5s 1 alternate rotate-hexagon;
+    }
+  }
+}
